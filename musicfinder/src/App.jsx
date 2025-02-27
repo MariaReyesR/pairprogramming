@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Main from "./componenets/Main/Main";
+import Music from "./componenets/Music/Music";
 import Header from "./componenets/Header/Header";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
     <div> 
       <Header /> 
-      <Main /> 
+      <Music /> 
     </div>
     </>
   )

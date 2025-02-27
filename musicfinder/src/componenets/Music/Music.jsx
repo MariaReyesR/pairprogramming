@@ -1,4 +1,4 @@
 import react from "react";
-import "./Main.scss"; 
+import "./Music.scss"; 
 import { useState, useEffect } from react; 
 
