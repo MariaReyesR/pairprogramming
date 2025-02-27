@@ -1,0 +1,22 @@
+.header {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  // background-color: black;
+  width: 100%;
+  border-radius: 20px;
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  &__title {
+    color: white;
+    font-size: 4rem;
+    font-family: "Courier New", Courier, monospace;
+  }
+}
