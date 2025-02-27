@@ -1,0 +1,75 @@
+@use "../../styles/partials/mixins" as mixins;
+@use "../../styles/partials/variables" as v;
+
+.footer {
+  @include mixins.margins;
+  @include mixins.bottom-margin;
+
+  &__logo {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mixins.tablet {
+      flex-direction: row;
+      padding-top: 3rem;
+      padding-bottom: 30%;
+    }
+
+    @include mixins.desktop {
+      padding-bottom: 15%;
+      width: 80%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mixins.tablet {
+      flex-direction: row;
+      gap: 3rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-between;
+    margin-right: 1rem;
+  }
+
+  &__item {
+    padding-bottom: 1rem;
+    @include mixins.copy;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    height: 3rem;
+
+    @include mixins.desktop {
+      position: relative;
+      justify-self: end;
+      transform: translateY(-21.875rem);
+    }
+  }
+
+  &__icon {
+    height: 1.875rem;
+  }
+
+  &__copy {
+    @include mixins.copy;
+    color: v.$seagreen;
+  }
+}
