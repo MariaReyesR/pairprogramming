@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./App.scss";
-import Music from "./componenets/Music/Music";
-import Header from "./componenets/Header/Header";
-import Footer from "./componenets/Footer/Footer";
+import Music from "./components/Music/Music";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
